@@ -4,12 +4,9 @@ $mail='';
 $msg_mail='';
 
 
-
-
-
-if(isset($_POST['btn_enviar'])) {
+ if(isset($_POST['btn_enviar'])) {
     
-    if(isset($_POST['mail'])){
+    if(!isset($_POST['mail'])){
         $msg_mail="Error en el campo CORREO";
     }else{
         $mail=trim($_POST['mail']);
@@ -24,7 +21,13 @@ if(isset($_POST['btn_enviar'])) {
         
     }
     
-}
+ }
+
+    
+		
+		
+		
+
 
 
 
